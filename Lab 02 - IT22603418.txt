@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b\fs28 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What happens when the number of hidden nodes increase?
+\f1\b0\fs24 \
+When we add more hidden nodes, the network can notice more complicated patterns. So, for non-linear data like the planar_dataset, the network can understand it better. But there is a challenge as well: more nodes mean the network needs to do more computations for each iteration, which makes training the model slower.\
+\
+
+\f0\b\fs28 Can you explain the pattern of the accuracy when the hidden nodes increase?
+\f1\b0\fs24 \
+\pard\pardeftab720\partightenfactor0
+\cf0 Very few hidden nodes (1\'962 neurons):\
+The network can\'92t capture complex patterns in the data.\
+Accuracy is low.\
+\
+Moderate number of hidden nodes (4\'9610 neurons):\
+The network captures most patterns in the data.\
+Accuracy increases and reaches a good level.\
+\
+Many hidden nodes (20+ neurons):\
+The network can capture very fine details, sometimes too much.\
+Training accuracy may become very high.\
+Computation time also increases, making training slower.}
